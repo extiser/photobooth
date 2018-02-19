@@ -1,0 +1,25 @@
+.mail {
+  &__icon {
+    position: relative;
+
+    width: 88px;
+    height: 76px;
+
+    cursor: pointer;
+
+    color: #bdbdbd;
+    border-left: 1px solid #e0e0e0;
+
+    font-size: rem-calc(33);
+
+    @extend .icon;
+    @extend .icon-email;
+    @include transition;
+    &:before {
+      @include absolute-center;
+    }
+    &:hover {
+      color: $blue;
+    }
+  }
+}

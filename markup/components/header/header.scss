@@ -1,0 +1,42 @@
+.header {
+  padding-top: 40px;
+
+  background-color: $white;
+  &__top {
+    padding-bottom: 28px;
+
+    border-bottom: 1px solid #f2f2f2;
+  }
+  &__bottom {
+    display: flex;
+
+    max-height: 76px;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.header-logo {
+  text-align: center;
+  text-decoration: none;
+
+  color: $black;
+  &__image {
+    margin-bottom: 30px;
+    img {
+      display: block;
+
+      margin: auto;
+    }
+  }
+  &__title {
+    font-size: rem-calc(40);
+    line-height: rem-calc(49);
+  }
+}

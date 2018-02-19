@@ -1,0 +1,14 @@
+mixin header(data)
+  .header
+    .header__top
+      a(href="/" title="Hula gallery").header-logo
+        .header-logo__image
+          img(src="%=static=%images/content/logo.png" alt="Hula gallery" width="216" htight="100")
+        .header-logo__title Ready Steady Booth
+
+    .header__bottom
+      +social
+      +menu
+      .header__group
+        +mail
+        +search

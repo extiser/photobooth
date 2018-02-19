@@ -1,0 +1,31 @@
+.menu {
+  &__list {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    // hook for stay menu under logo
+    padding-right: 130px;
+    // hook for stay menu under logo
+  }
+  &__item {
+    padding: 0 18px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: $black;
+
+    font-size: rem-calc(18);
+    line-height: rem-calc(22);
+
+    @include transition;
+    &._active,
+    &:hover {
+      font-family: $Bold;
+    }
+    &:visited {
+      color: $black;
+    }
+  }
+}

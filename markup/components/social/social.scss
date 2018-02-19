@@ -1,0 +1,50 @@
+.social {
+  display: flex;
+
+  width: 100%;
+  max-width: 306px;
+
+  border-right: 1px solid #e0e0e0;
+
+  align-items: center;
+  justify-content: flex-start;
+  &__item {
+    position: relative;
+
+    display: block;
+
+    width: 72px;
+    height: 76px;
+
+    text-decoration: none;
+
+    color: #bdbdbd;
+
+    font-size: rem-calc(24);
+
+    @extend .icon;
+    &:before {
+      @include absolute-center;
+    }
+    &._instagram {
+      font-size: rem-calc(24);
+
+      @extend .icon-instagram;
+    }
+    &._facebook {
+      font-size: rem-calc(23);
+
+      @extend .icon-facebook;
+    }
+    &._twitter {
+      font-size: rem-calc(25);
+
+      @extend .icon-twitter;
+    }
+    &._google-plus {
+      font-size: rem-calc(33);
+
+      @extend .icon-google-plus;
+    }
+  }
+}
