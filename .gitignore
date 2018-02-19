@@ -15,5 +15,5 @@ phantomjsdriver.log
 **/svg-fallback-sprite.*
 **/svg-sprite.*
 
-*.sublime-project
-*.sublime-workspace
+photobooth.sublime-project
+photobooth.sublime-workspace
